@@ -5,6 +5,8 @@ body {
   line-height: 1.6;
   background: linear-gradient(135deg, #121212, #1A1A1A); /* Gradient from Very Dark Grey to Slightly Lighter Dark Grey */
   color: #D3D3D3; /* Light Grey */
+  background: linear-gradient(135deg, #121212, #1A1A1A); /* Gradient from Very Dark Grey to Slightly Lighter Dark Grey */
+  color: #D3D3D3; /* Light Grey */
 }
 
 header {
@@ -24,74 +26,7 @@ section {
   border: 1px solid #800020; /* Burgundy Accent */
   padding: 1rem;
   border-radius: 8px;
-  background: linear-gradient(135deg, #1A1A1A, #121212); /* Gradient for project cards */
-  color: #E0E0E0; /* Light Grey */
-}
-
-button {
-  background: linear-gradient(135deg, #800020, #A52A2A); /* Gradient for buttons */
-  color: #E0E0E0; /* Light Grey */
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: linear-gradient(135deg, #A52A2A, #800020); /* Reverse gradient on hover */
-}
-
-.alert-success {
-  background: linear-gradient(135deg, #4CAF50, #388E3C); /* Gradient for success alerts */
-  color: #E0E0E0; /* Light Grey */
-  padding: 1rem;
-  border-radius: 4px;
-}
-
-.alert-error {
-  background: linear-gradient(135deg, #FF5252, #D32F2F); /* Gradient for error alerts */
-  color: #E0E0E0; /* Light Grey */
-  padding: 1rem;
-  border-radius: 4px;
-}
-
-.card {
-  border: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(135deg, #1A1A1A, #121212); /* Gradient for cards */
-  color: #E0E0E0; /* Light Grey */
-}
-
-.accordion-button {
-  background: linear-gradient(135deg, #1A1A1A, #121212); /* Gradient for accordion buttons */
-  color: #D3D3D3; /* Light Grey */
-}
-
-.accordion-button:not(.collapsed) {
-  background: linear-gradient(135deg, #800020, #A52A2A); /* Gradient for active accordion buttons */
-  color: #E0E0E0; /* Light Grey */
-}
-
-.btn-outline-primary {
-  background: transparent;
-  color: #800020; /* Burgundy for primary outline buttons */
-  border: 2px solid #800020; /* Burgundy border */
-  transition: all 0.3s ease;
-}
-
-.btn-outline-primary:hover {
-  background: linear-gradient(135deg, #800020, #A52A2A); /* Gradient on hover */
-  color: #FFFFFF; /* White for better contrast */
-  border-color: #A52A2A; /* Darker burgundy border on hover */
-}
-
-
-/* Accordion Body */
-.accordion-body {
-  background: linear-gradient(135deg, #121212, #1A1A1A); /* Matches your section/card gradients */
-  color: #E0E0E0; /* Light grey text */
-  border-top: 1px solid #800020; /* Burgundy accent to separate items */
-  font-size: 0.95rem;
+  background: #f9f9f9;
 }
 
 /* Accordion Header Button */
