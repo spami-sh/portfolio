@@ -4,52 +4,159 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sami Hossain | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Navbar -->
   <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Sami Hossain</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
   <!-- Hero / About -->
-  <section id="about">
-    <h1>Hi, I'm Sami 👋</h1>
-    <p>Computer Science student at Aston University, passionate about AI and software development.</p>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Expense Tracker App</h3>
-        <p>Python + SQLite + Tkinter GUI</p>
-      </div>
-      <div class="project-card">
-        <h3>To-Do List App</h3>
-        <p>Node.js + Express.js + MySQL</p>
-      </div>
-      <div class="project-card">
-        <h3>Weather App</h3>
-        <p>Flask + API Integration</p>
-      </div>
+  <section id="about" class="py-5 bg-light text-center">
+    <div class="container">
+      <h1 class="display-4">Hi, I'm Sami 👋</h1>
+      <p class="lead">Computer Science student at Aston University, passionate about AI and software development.</p>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: Samihossainwhitehall@outlook.com</p>
-    <a href="https://www.linkedin.com/in/sami-hossain-394580267/">LinkedIn</a>
+  <!--grades-->
+  <section id="grades" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Academic Achievements</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Year 1</h5>
+              <p class="card-text">Grade: High 2:1</p>
+              <h5 class="card-title">Best modules:</h5>
+              <div class="accordion" id="bestModulesAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOOP">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOOP" aria-expanded="false" aria-controls="collapseOOP">
+                      Object-Oriented Programming
+                    </button>
+                  </h2>
+                  <div id="collapseOOP" class="accordion-collapse collapse" aria-labelledby="headingOOP" data-bs-parent="#bestModulesAccordion">
+                    <div class="accordion-body">
+                      <strong>Grade: 80%</strong> – Advanced Java & software design principles. Strongest technical skill, highly relevant for coding, backend, and software development roles.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingMath">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMath" aria-expanded="false" aria-controls="collapseMath">
+                      Mathematics for Computing
+                    </button>
+                  </h2>
+                  <div id="collapseMath" class="accordion-collapse collapse" aria-labelledby="headingMath" data-bs-parent="#bestModulesAccordion">
+                    <div class="accordion-body">
+                      <strong>Grade: 78%</strong> – Analytical/problem-solving skills. Essential for algorithms, data structures, and logical thinking.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingBusiness">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBusiness" aria-expanded="false" aria-controls="collapseBusiness">
+                      Business Aspects of Computing
+                    </button>
+                  </h2>
+                  <div id="collapseBusiness" class="accordion-collapse collapse" aria-labelledby="headingBusiness" data-bs-parent="#bestModulesAccordion">
+                    <div class="accordion-body">
+                      <strong>Grade: 78%</strong> – Applied computing in commercial contexts. Shows understanding of how tech integrates into business.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSystems">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSystems" aria-expanded="false" aria-controls="collapseSystems">
+                      Computer Systems
+                    </button>
+                  </h2>
+                  <div id="collapseSystems" class="accordion-collapse collapse" aria-labelledby="headingSystems" data-bs-parent="#bestModulesAccordion">
+                    <div class="accordion-body">
+                      <strong>Grade: 76%</strong> – Low-level hardware & system knowledge. Good foundational knowledge for system-level programming, operating systems, or embedded systems.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+        </div>
+  <!-- Projects -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Projects</h2>
+      <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card mx-auto" style="width: 24rem;">
+              <div class="card-body">
+                <h5 class="card-title">Expense Tracker App</h5>
+                <p class="card-text">Python + SQLite + Tkinter GUI</p>
+                <a href="https://github.com/yourusername/expense-tracker" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card mx-auto" style="width: 24rem;">
+              <div class="card-body">
+                <h5 class="card-title">To-Do List App</h5>
+                <p class="card-text">Node.js + Express.js + MySQL</p>
+                <a href="https://github.com/yourusername/todo-list" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card mx-auto" style="width: 24rem;">
+              <div class="card-body">
+                <h5 class="card-title">Weather App</h5>
+                <p class="card-text">Flask + API Integration</p>
+                <a href="https://github.com/yourusername/weather-app" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev" style="display: block;">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next" style="display: block;">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+      </div>
   </section>
 
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p><a href="mailto:samihossainwhitehall@outlook.com" class="btn btn-outline-primary">Email me</a></p>
+      <p><a href="https://www.linkedin.com/in/sami-hossain-394580267/" class="btn btn-outline-primary">LinkedIn</a></p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
