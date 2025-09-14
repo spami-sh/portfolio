@@ -92,6 +92,7 @@ button:hover {
   color: #E0E0E0; /* Light grey text */
   border-top: 1px solid #800020; /* Burgundy accent to separate items */
   font-size: 0.95rem;
+
 }
 
 /* Accordion Header Button */
@@ -112,7 +113,30 @@ button:hover {
 
 /* Accordion Hover Effect */
 .accordion-button:hover {
+  border: 2px solid #800020; /* Solid burgundy border */
   background: linear-gradient(135deg, #A52A2A, #800020); /* Reverse gradient on hover */
   color: #FFFFFF;
 }
+/* Accordion Item Container */
+.accordion-item {
+  border: 1px solid #800020; /* Burgundy border for the entire item */
+  border-radius: 8px;
+  overflow: hidden; /* Ensures header and body respect rounded corners */
+  margin-bottom: 0.5rem; /* Space between items */
+  background: linear-gradient(135deg, #1A1A1A, #121212); /* Dark gradient */
+  transition: all 0.3s ease;
+}
 
+/* Optional: Glow effect when focused or expanded */
+.accordion-item:focus-within {
+  box-shadow: 0 0 10px rgba(128, 0, 32, 0.5); /* Burgundy glow */
+}
+
+
+/* Custom focus for buttons, links, accordion */
+button:focus,
+a:focus,
+.accordion-button:focus {
+  outline: none; /* Remove default blue */
+  box-shadow: 0 0 5px 3px rgba(128, 0, 32, 0.5); /* Burgundy glow */
+}
